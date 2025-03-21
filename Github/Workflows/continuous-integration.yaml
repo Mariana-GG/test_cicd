@@ -12,19 +12,20 @@ on:
 
 # which --Jobs-- do i want to run
 # write a list of jobs
+# on which platform do i want to run the jobs
+# define the steps to follow = process done at local repository
 jobs:
-    lunch:
-
-
-    dinner:
-
-
     build:
+      runs-on: ubuntu-latest
+      steps: 
+        -name: Checkout repository
+        uses: actions/checkout@v2       # default library
 
-
-    format_code:
-
-    sendemail:
+        # set up Python
+        -name: Set up Python
+        uses: actions/setup-python@v2   # default library 
+        with:
+          python-version: 3.11           # version of python free to choose
 
 
 

@@ -40,8 +40,15 @@ jobs:
           make dev-test2
         
         # add env
+        env:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}  # put this key into secrets and variables in Githubgit status
-git push origin main  # Use your actual branch name
+          # add secrets from database
+          DB_NAME: ${{ secrets.DB_NAME }}
+          DB_USER: ${{ secrets.DB_USER }}
+          DB_PWD: ${{ secrets.DB_PWD }}
+          DB_HOST: ${{ secrets.DB_HOST }}
+          DB_PORT: ${{ secrets.DB_PORT }}
+
 
 
 

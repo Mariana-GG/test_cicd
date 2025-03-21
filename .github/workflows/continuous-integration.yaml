@@ -43,5 +43,5 @@ jobs:
 
 
 # when someone does a pull request
-on:
-  pull_request:
+# on:
+#   pull_request:

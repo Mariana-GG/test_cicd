@@ -31,7 +31,7 @@ jobs:
         - name: Install dependencies and Libraries
           run: |                                      # run the following commands with pipe character
             python -m pip install --upgrade pip
-            pip install -r requirements.txt/dev.txt
+            pip install -r requirements/dev.txt
 
         # run the tests -- UNIT TESTS --
         # copy the command from the local repository at MAKEFILE --

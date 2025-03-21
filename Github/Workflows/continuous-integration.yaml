@@ -1,3 +1,34 @@
 # call the name + description of the workflow
 
 name: Django Project on Users Resources and Bookstore
+
+# when do i want to run the commands
+# wheneve someone pushes
+# on which --> branche ?
+on:
+  push:
+    branches:
+      - main
+
+# which --Jobs-- do i want to run
+# write a list of jobs
+jobs:
+    lunch:
+
+
+    dinner:
+
+
+    build:
+
+
+    format_code:
+
+    sendemail:
+
+
+
+
+# when someone does a pull request
+on:
+  pull_request:

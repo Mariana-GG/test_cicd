@@ -18,26 +18,26 @@ jobs:
     build:
       runs-on: ubuntu-latest
       steps: 
-        -name: Checkout repository
-        uses: actions/checkout@v2       # default library
+        - name: Checkout repository
+          uses: actions/checkout@v2       # default library
 
         # set up Python
-        -name: Set up Python
-        uses: actions/setup-python@v2   # default library 
-        with:
-          python-version: 3.11          # version of python free to choose
+        - name: Set up Python
+          uses: actions/setup-python@v2   # default library 
+          with:
+            python-version: 3.11          # version of python free to choose
 
         # install -- dependencies -- & -- libraries --
-        -name: Install dependencies and Libraries
-        run: |                                      # run the following commands with pipe character
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt/dev.txt
+        - name: Install dependencies and Libraries
+          run: |                                      # run the following commands with pipe character
+            python -m pip install --upgrade pip
+            pip install -r requirements.txt/dev.txt
 
         # run the tests -- UNIT TESTS --
         # copy the command from the local repository at MAKEFILE --
-        -name: Run test
-        run: |
-          make dev-test2
+        - name: Run test
+          run: |
+            make dev-test2
 
 
 

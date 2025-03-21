@@ -17,7 +17,7 @@ on:
 jobs:
     build:
       runs-on: ubuntu-latest
-      environment: my_project.env
+      environment: my_project_env
       steps: 
         - name: Checkout repository
           uses: actions/checkout@v2       # default library
